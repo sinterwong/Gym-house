@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pose physical</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <h2 id="standard">是否标准：</h2>
+    <h2 id="remind">动作提示：</h2>
+    <video id="video" width="720px" height="560px" autoplay muted></video>
+    <canvas id="own_canvas" width="720px" height="560px"></canvas>
+    <canvas id="ref_canvas" width="720px" height="560px", ></canvas>
+
+    <!-- <video id="refer_video" controls width="720px">
+        <source src="video/warm-up.mp4" type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+    </video> -->
+</body>
+
+</html>
+
